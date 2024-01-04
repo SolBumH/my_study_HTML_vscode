@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      .navi {
+        width: 100%;
+        height: 30px;
+        background-color: rgb(196, 180, 189);
+        overflow: hidden; /* 한줄로 숨기기 */
+      }
+      .menuI {
+        width: 100px;
+        height: 100%; /* 부모 div height 의 높이 중 얼마나 사용할 지 여부 */
+        background-color: #eee7da;
+        float: left; /* div 구성 요소가 있을 때 칸이 남을 경우 한줄로 정렬해 줌 */
+        line-height: 30px; /* 해당 줄에서 text 의 상하위치를 지정할 수 있음 */
+        text-align: center;
+        border-radius: 10%;
+        margin-right: 10px;
+      }
+      .menuI:hover {
+        /* 마우스 오버 시 칸의 특성 조절 가능 */
+        background-color: rgb(230, 200, 219);
+        width: 100px; /* 마우스 오버 시 칸의 넓이 지정 */
+        font-weight: bolder;
+        transition-duration: 300ms; /* 동작 처음과 마지막 진행까지 걸리는 딜레이 설정, 서서히 변경 */
+        transition-delay: 50ms; /* 동작의 첫 시작까지 걸리는 시간 설정 */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navi">
+      <div class="menuI"><i class="xi-face xi-2x"></i></div>
+      <div class="menuI"><i class="xi-home"></i>홈</div>
+      <div class="menuI"><i class="xi-paper"></i>게시판</div>
+      <div class="menuI"><i class="xi-help-o"></i>문의사항</div>
+      <div class="menuI"><i class="xi-log-in"></i>로그인</div>
+      <div class="menuI"><i class="xi-info-o"></i>도움말</div>
+    </div>
+  </body>
+</html>

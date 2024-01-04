@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>position</title>
+    <style>
+      .box1,
+      .box2 {
+        /* 동시에 같은 양식을 선언할 수 있음 */
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+      }
+      .box1 {
+        /* 각자 다른 양식을 적용하고 싶을 때 사용 */
+        position: relative; /* relative : 자유 위치 */
+        top: 50%;
+        left: 50%;
+        margin-left: -50px;
+        z-index: 1; /* z-index : 낮은 숫자 순서대로 먼저 출력, 숫자가 같으면 순차적으로 출력 */
+        background-color: yellow;
+      }
+      .box2 {
+        position: relative;
+        margin-top: -50px; /* 위로 50px 만큼 올라감 */
+        background-color: green;
+        z-index: 2;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <a href="./write.html"></a>
+  </body>
+</html>
